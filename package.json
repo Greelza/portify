@@ -1,0 +1,25 @@
+{
+  "name": "portify",
+  "version": "1.0.0",
+  "description": "Portify — AI Portfolio Reviewer (extended) =============================================",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Greelza/portify.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Greelza/portify/issues"
+  },
+  "homepage": "https://github.com/Greelza/portify#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "openai": "^6.3.0"
+  }
+}
