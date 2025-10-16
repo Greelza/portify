@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portify — Portfolio Reviewer</title>
+  <meta name="description" content="AI-lite ревью портфолио: content, UX, performance, hireability." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Portify — Portfolio Reviewer</h1>
+    <p class="tagline">Быстрая проверка портфолио: Content • UX • Performance • Hireability</p>
+
+    <section class="input-block">
+      <label for="url">Вставь ссылку на портфолио или текст кейса</label>
+      <input id="url" placeholder="https://..." />
+      <div class="or">или</div>
+      <textarea id="paste" placeholder="Вставь HTML, текст кейса, или краткое описание проекта"></textarea>
+      <div class="controls">
+        <button id="analyzeBtn">Проверить</button>
+        <button id="exampleBtn" class="ghost">Пример</button>
+      </div>
+      <div id="status" class="status"></div>
+    </section>
+
+    <section id="result" class="result hidden">
+      <div class="score-block">
+        <div class="score" id="score">—</div>
+        <div class="score-meta">Общий рейтинг</div>
+      </div>
+
+      <div class="breakdown" id="breakdown"></div>
+
+      <div class="actions">
+        <button id="shareBtn">Сгенерировать карточку для шаринга</button>
+        <a id="upgradeLink" class="upgrade" href="#">Глубокая проверка (PDF)</a>
+      </div>
+
+      <section id="recommendations" class="recommendations"></section>
+    </section>
+
+    <footer>
+      <small>Прототип · Быстрая версия · Не заменяет профессиональное ревью</small>
+    </footer>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>

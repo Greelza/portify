@@ -1,0 +1,52 @@
+:root{
+  --bg:#0f1720;
+  --card:#0b1220;
+  --accent:#7dd3fc;
+  --muted:#9aa4b2;
+  --glass: rgba(255,255,255,0.03);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  min-height:100vh;
+  background:linear-gradient(180deg,#071026 0%, #07172b 100%);
+  color:#e6eef6;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  padding:48px 12px;
+}
+.container{
+  max-width:900px;
+  margin:0 auto;
+}
+h1{margin:0 0 8px;font-size:28px}
+.tagline{color:var(--muted); margin:0 0 20px}
+.input-block{background:var(--glass); padding:18px; border-radius:10px}
+.input-block label{display:block; margin-bottom:8px; color:var(--muted)}
+#url, #paste{
+  width:100%; padding:10px; border-radius:8px; border:1px solid rgba(255,255,255,0.06);
+  background:transparent; color:inherit; resize:vertical;
+}
+#url{height:44px}
+#paste{height:120px; margin-top:8px}
+.or{color:var(--muted); text-align:center; margin:10px 0}
+.controls{display:flex; gap:8px; margin-top:10px}
+button{background:var(--accent); border:0; padding:10px 14px; border-radius:8px; cursor:pointer; color:#012; font-weight:600}
+button.ghost{background:transparent; border:1px solid rgba(255,255,255,0.06); color:var(--muted)}
+.status{margin-top:12px; color:var(--muted)}
+
+.result{margin-top:20px; background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:16px; border-radius:10px}
+.hidden{display:none}
+.score-block{display:flex; align-items:center; gap:16px}
+.score{font-size:42px; font-weight:800; color:var(--accent);}
+.score-meta{color:var(--muted)}
+.breakdown{display:grid; grid-template-columns:repeat(2,1fr); gap:10px; margin-top:12px}
+.cat{background:rgba(255,255,255,0.02); padding:10px; border-radius:8px}
+.cat h4{margin:0 0 6px}
+.recommendations{margin-top:14px}
+.recommendations ul{margin:8px 0 0 20px; color:var(--muted)}
+.actions{display:flex; gap:8px; margin-top:12px; align-items:center}
+.upgrade{margin-left:auto; color:var(--accent); text-decoration:none; font-weight:700}
+
+footer{margin-top:18px; color:var(--muted); font-size:13px}
